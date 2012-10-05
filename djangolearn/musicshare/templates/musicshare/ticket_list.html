@@ -1,0 +1,9 @@
+{% extends "musicshare/base.html" %}
+
+{% block title %} Listing Invoices {% endblock %}
+
+{% block content %}
+    {% for invoice in object_list %}
+        <p>{{ invoice.dollar_amount }}</p>
+    {% endfor %}
+{% endblock %}
